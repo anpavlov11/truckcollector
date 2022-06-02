@@ -1,0 +1,54 @@
+h1 {
+    font-size: 58px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('https://i.imgur.com/yFzy7VM.jpg');
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(79, 84, 16, 0.7);
+}
+
+.navbar-item {
+    color: gold;
+    font-size: 22px;
+}
+
+.navbar-menu .navbar-burger {
+    color: grey;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery .card {
+    transition: .1s linear;
+}
+
+.gallery .card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+p {
+    font-size: 12px;
+}
