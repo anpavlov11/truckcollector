@@ -13,3 +13,6 @@ class Home(TemplateView):
 class About(View):
     def get(self, request):
         return HttpResponse('Truck Collector About')
+
+class About(TemplateView):
+    template_name = 'about.html'
