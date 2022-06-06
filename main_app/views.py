@@ -14,8 +14,13 @@ class TruckList(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["trucks"] = Truck.objects.all()
-        return context
+        name = self.request.GET.get('name')
+        if name != None:
+            context['trucks'] = Truck.objects.filter(name__icontains=name)
+            context['header'] = f"Searching for {name}"
+        else:
+            context["trucks"] = Truck.objects.all()
+            return context
 
 class TruckCreate(CreateView):
     model = Truck
