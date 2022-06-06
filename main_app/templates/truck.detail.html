@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>This is my show page for {{truck.name}}</h1>
+    <img src="{{truck.image}}" alt="{{truck.name}}" />
+    <a href="/trucks/{{truck.id}}/update">Edit Truck</a>
+    <a href="/trucks/{{truck.id}}/delete">Delete Truck</a>
+    <h4>{{truck.coolStuff}}</h4>
+{% endblock %}

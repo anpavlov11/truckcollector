@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
-{% block title %} - Trucks {% endblock %}
-{% comment %} This is for our class {% endcomment %}
+{% block title %} Trucks {% endblock %}
+{% comment %} Truck List {% endcomment %}
 {% block content %}
-    <h3>Popular Trucks</h3>
-    {% for trucks in truck %}
+    <h3>Truck List</h3>
+    {% for truck in trucks %}
         <a href="{{truck.id}}" >
             <h4>{{truck.name}}</h4>
         </a>
         <p>{{truck.coolStuff}}</p>
-        <img src="{{truck.img}}" alt="{{truck.name}}" />
+        <img src="{{truck.image}}" alt="{{truck.name}}" />
     {% endfor %}
 {% endblock %}

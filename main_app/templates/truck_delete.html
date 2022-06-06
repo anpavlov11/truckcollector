@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Delete {{truck.name}}?</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Confirm" />
+    <a href="/truckss/{{truck.id}}">Nope...</a>
+</form>
+{% endblock %}
