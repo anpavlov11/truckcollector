@@ -1,4 +1,4 @@
-html {
+body {
     font-family: 'Courier New', Courier, monospace;
     background-image: url('https://i.imgur.com/yFzy7VM.jpg');
     background-size: cover;
@@ -16,18 +16,15 @@ h3 {
     text-align: center;
 }
 
-p {
-    font-size: 28px;
-    text-align: left;
-}
-
 .navbar {
     background-color: rgba(79, 84, 16, 0.7);
+    text-decoration: none;
 }
 
-.navbar-item {
+a.navbar-item {
     color: gold;
     font-size: 22px;
+    text-decoration: none;
 }
 
 .title {
